@@ -14,7 +14,6 @@ It's been quite a while. The postgrad examination has been done, and I've got qu
 
 Though, there's still this grad design thing occupying me at this moment. Well, I will get back once I finish that, mark my words!
 
-It's also about time I change to a better blogging tool, too! Jekyll always feels kinda clumsy for me. And as I (kinda) want to dive deep in Rust, why not use a blogging tool written in Rust? [Zola](https://www.getzola.org/) (whose former name is Gutenburg) suits me perfectly in this aspect. So off I go!
+It's also about time I change to a better blogging tool, too! Jekyll always feels kinda clumsy for me. And as I (kinda) want to dive deep in Rust, why not use a blogging tool written in Rust? [Zola](https://www.getzola.org/) (whose former name is Gutenburg) suits me perfectly in this aspect. So off I go! Old blog is archived [here](https://github.com/42yeah/EoS).
 
 Well, that's it for the updates. Thank you for your attention, kind strangers from the Internet. Guess I'll see ya!
-
