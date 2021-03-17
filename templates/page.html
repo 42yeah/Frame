@@ -24,6 +24,25 @@
             </div>
 
             <div class="content">
+                {% if page.toc %}
+                <div class="toc">
+                    <h4 class="toc-title">Table of Contents</h4>
+                    <div class="mt-half">
+                        {% for h1 in page.toc %}
+                        <div class="toc-h1">
+                            <a class="toc-h1-a" href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+                        </div>
+                        {% if h1.children %}
+                        {% for h2 in h1.children %}
+                        <div class="toc-h2">
+                            <a class="toc-h2-a" href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
                 <p>
                     {{ page.content | safe }}
                 </p>

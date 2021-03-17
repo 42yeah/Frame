@@ -105,6 +105,7 @@ p > a:active::after {
     width: 100%;
     background-color: white;
     overflow: scroll;
+    scroll-behavior: smooth;
 }
 
 .title {
@@ -308,4 +309,119 @@ p > a:active::after {
     color: #aaaaaa;
     mix-blend-mode: exclusion;
     filter: invert(1);
+}
+
+.toc {
+    border: 1px solid #aaaaaa33;
+    margin: 1em;
+    max-width: 100%;
+    padding-bottom: 0.7em;
+}
+
+@media screen and (min-width: 450px) {
+    .toc {
+        float: left;
+        border: 1px solid #aaaaaa33;
+        margin: 1em;
+        max-width: 100%;
+        padding-bottom: 0.7em;
+    }   
+}
+
+.toc-title {
+    margin: 0.7em;
+}
+
+.toc-h1 {
+    background-color: #eeeeee33;
+    padding: 0.1em 0.7em;
+    position: relative;
+}
+
+.toc-h1::after {
+    content: " ";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-bottom: 1px solid #aaaaaa66;
+    pointer-events: none;
+}
+
+.toc-h1::before {
+    content: " ";
+    position: absolute;
+    width: 0.4em;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #ff650077;
+    transition: all 1.0s cubic-bezier(0.075, 0.82, 0.165, 1);
+    pointer-events: none;
+}
+
+.toc-h1:hover::before {
+    width: 100%;
+}
+
+.toc-h1-a {
+    color: #343434;
+    text-decoration: none;
+    font-weight: 400;
+    width: 100%;
+    display: block;
+}
+
+.toc-h1:hover > .toc-h1-a {
+    color: #8f3900fb;
+}
+
+.toc-h2 {
+    background-color: #eeeeee66;
+    padding: 0.1em 0.7em;
+    position: relative;
+}
+
+.toc-h2::before {
+    content: " ";
+    position: absolute;
+    width: 0.7em;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #ff650033;
+    transition: all 1.0s cubic-bezier(0.075, 0.82, 0.165, 1);
+    pointer-events: none;
+}
+
+.toc-h2:hover::before {
+    width: 100%;
+}
+
+.toc-h2-a {
+    color: #565656;
+    text-decoration: none;
+    font-weight: 300;
+    margin-left: 0.5em;
+    width: 100%;
+    display: block;
+}
+
+.toc-h2:hover > .toc-h2-a {
+    color: #ce5200fb;
+}
+
+.content > h2 {
+    margin-top: 2em;
+    margin-bottom: 0.4em;
+}
+
+ol {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.content {
+    line-height: 1.5em;
 }
