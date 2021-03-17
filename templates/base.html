@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}Frame of 42yeah</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/showTooltips.js"></script>
+    <script src="/js/share.js"></script>
+</head>
+<body>
+    <div class="viewport">
+        <div class="far-far-away"><input id="page-url" value="{{ current_url }}"></div>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

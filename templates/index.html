@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="vertical-viewport">
+        <div class="top-banner">
+            <div class="fof">42yeah</div>
+        </div>
+        <div class="blog-container">
+            <div class="title">
+                <p>
+                    Hello! This is 42yeah. I come from Guangzhou, China, am interested in Computer Graphics, and this is my personal page. Hello!
+                </p>
+                <h3 class="mt-1">Choose your fighter</h3>
+            </div>
+            <div class="blog-list">
+                <a class="blog-card" href="/blog">
+                    <div class="blog-thumbnail">
+                        <img src="/res/favicon.png" style="image-rendering: pixelated;">
+                    </div>
+                    <div class="blog-content">
+                        <h4>The Frame</h4>
+                        <p class="excerpt"><i>The Frame is my blog.</i></p>
+                    </div>
+                </a>
+                <a class="blog-card" href="https://github.com/42yeah">
+                    <div class="blog-thumbnail">
+                        <img src="/res/github.jpg">
+                    </div>
+                    <div class="blog-content">
+                        <h4>My GitHub</h4>
+                        <p class="excerpt"><i>I post A LOT of things on my GitHub; not all of them might be useful though.</i></p>
+                    </div>
+                </a>
+                <a class="blog-card" href="https://shadertoy.com/user/42yeah">
+                    <div class="blog-thumbnail">
+                        <img src="/res/shadertoy.png">
+                    </div>
+                    <div class="blog-content">
+                        <h4>Shadertoy</h4>
+                        <p class="excerpt"><i>I absolutely LOVE Shadertoy! I don't have a lot of free time recently, is all.</i></p>
+                    </div>
+                </a>
+                <a class="blog-card" href="https://twitter.com/42yeah">
+                    <div class="blog-thumbnail">
+                        <img src="/res/twitter.png">
+                    </div>
+                    <div class="blog-content">
+                        <h4>Twitter</h4>
+                        <p class="excerpt"><i>I ocassionally post stuffs here.</i></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        {% include "footer.html" %}
+    </div>
+</div>
+
+
+{% endblock content %}

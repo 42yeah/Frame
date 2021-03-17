@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ page.title }} | 
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="vertical-viewport">
+        <div class="sticky">
+            <div class="top-banner">
+                <div class="fof">Frame of 42yeah</div>
+            </div>
+            {% include "toolbar.html" %}
+        </div>
+        
+        <div class="blog-container">
+            <div class="parallax" style="background-image: url({{ resize_image(path=page.extra.thumbnail, quality=100, width=750, height=500) }});">
+                <div class="title">
+                    <h3>{{ page.title }}</h3>
+                    <h5><i class="nf">פֿ <!-- pen --></i> {{ page.extra.author }}</h5>
+                    <h5><i class="nf"><!-- clock --></i> {{ page.date }}</h5>
+                </div>
+            </div>
+
+            <div class="content">
+                <p>
+                    {{ page.content | safe }}
+                </p>
+            </div>
+        </div>
+
+        {% include "footer.html" %}
+    </div>
+</div>
+{% endblock content %}

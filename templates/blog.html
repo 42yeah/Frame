@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="vertical-viewport">
+        <div class="top-banner">
+            <div class="fof">Frame of 42yeah</div>
+        </div>
+        {% include "toolbar.html" %}
+        <div class="blog-container">
+            <div class="title">
+                <p>
+                    Hello! This is 42yeah. I come from Guangzhou, China, am interested in Computer Graphics, and you are looking at my blog. Hats off to ya!
+                </p>
+                <h3 class="mt-1">{{ section.title }}</h3>
+            </div>
+            <div class="blog-list">
+                {% for page in section.pages %}
+                <a class="blog-card" href="{{ page.permalink | safe }}">
+                    <div class="blog-thumbnail">
+                        <img src="{{ resize_image(path=page.extra.thumbnail, quality=40, width=300, height=300) }}">
+                    </div>
+                    <div class="blog-content">
+                        <h4>{{ page.title }}</h4>
+                        <div class="mt-half"><i>{{ page.summary | safe }}</i></div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+        {% include "footer.html" %}
+    </div>
+</div>
+
+
+{% endblock content %}
