@@ -15,6 +15,24 @@
 }
 
 @font-face {
+    font-family: plex;
+    src: url(/fonts/plex.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: plex;
+    src: url(/fonts/plexb.ttf) format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: plex;
+    src: url(/fonts/plexi.ttf) format("truetype");
+    font-style: italic;
+}
+
+
+@font-face {
     font-family: nf;
     src: url(/fonts/nf.ttf) format("truetype");
 }
@@ -412,7 +430,11 @@ p > a:active::after {
     color: #ce5200fb;
 }
 
-.content > h2 {
+.content > h1, 
+.content > h2, 
+.content > h3, 
+.content > h4, 
+.content > h5 {
     margin-top: 2em;
     margin-bottom: 0.4em;
 }
@@ -424,4 +446,86 @@ ol {
 
 .content {
     line-height: 1.5em;
+}
+
+code {
+    font-family: plex, "SF Mono", Consolas, 'Courier New', Courier, monospace;
+    background-color: rgba(0, 117, 252, 0.1);
+    color: rgb(1, 71, 150);
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0em 0.5em;
+}
+
+pre {
+    background: transparent !important;
+    font-size: 14px;
+    position: relative;
+    padding-left: 10px;
+    transition: all 1.0s cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin-bottom: 1em;
+    overflow-x: hidden;
+}
+
+::selection {
+    background-color: rgba(0, 117, 252, 0.2);
+}
+
+pre::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: rgb(0, 117, 252);
+}
+
+pre::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: rgba(0, 117, 252, 0.05);
+    transition: all 1.0s cubic-bezier(0.075, 0.82, 0.165, 1);
+    pointer-events: none;
+}
+
+pre:hover::after {
+    width: 100%;
+}
+
+pre > code {
+    transition: all 1.0s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: transparent;
+    overflow: scroll;
+    max-width: calc(100% - 1em);
+}
+
+pre:hover > code {
+    filter: saturate(300%) brightness(80%);
+}
+
+p > img {
+    max-height: 300px;
+    width: auto;
+    border: 1px solid #aaaaaa33;
+    box-shadow: 2px 2px 2px #aaaaaa33;
+    transition: all 1.0s cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: inline-block;
+}
+
+p > img:hover {
+    filter: saturate(200%);
+    transform: scale(1.02);
+    box-shadow: 4px 4px 4px #aaaaaa33;
+}
+
+.alt {
+    color: #56565689;
+    font-size: 13px;
+    margin-bottom: 1em;
+    margin-top: -5px;
 }

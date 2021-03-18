@@ -29,6 +29,10 @@ So only six steps. Easy! Well, surprise surprise, it's not. But before we begin 
 
 First off, we need to install [OpenCV](https://opencv.org/). Can't stress this enough. I tried to implement its functions by myself, however the result is too slow, and the memory usage too high - even if I accelerated it using OpenGL calls. If you can implement it yourself, go ahead! And you will have my greatest respect.
 
+## Learn the Very Basics of OpenCV
+
+If you are going to use OpenCV, I highly recommend you to learn the very, very basic of OpenCV first (such as `cv::Mat` and all that. Image rendering? Saving an image?). I am not going to spend much time into explaining OpenCV calls on day 2, and OpenCV is fun to learn!
+
 After that, well, nothing! We are all set. I recommend you to clone the source code from [royshil/SfM-Toy-Library](https://github.com/royshil/SfM-Toy-Library/issues) as this is where I learn (and copy) from. I also recommend you to read [The MVG Bible](https://www.robots.ox.ac.uk/~vgg/hzbook/) if you can. 
 
 ## Final Words
