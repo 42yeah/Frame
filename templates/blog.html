@@ -3,10 +3,12 @@
 {% block content %}
 <div class="container">
     <div class="vertical-viewport">
-        <div class="top-banner">
-            <div class="fof">Frame of 42yeah</div>
+        <div class="sticky">
+            <div class="top-banner">
+                <div class="fof">Frame of 42yeah</div>
+            </div>
+            {% include "toolbar.html" %}
         </div>
-        {% include "toolbar.html" %}
         <div class="blog-container">
             <div class="title">
                 <p>
@@ -28,7 +30,14 @@
                 {% endfor %}
             </div>
         </div>
+        <div class="scrollbar-viewport invisible">
+            <div class="scrollbar">
+                <div class="scrollbar-line"></div>
+                <div class="scrollbar-brick"></div>
+            </div>
+        </div>
         {% include "footer.html" %}
+        <script src="/js/scrollbar.js"></script>
     </div>
 </div>
 

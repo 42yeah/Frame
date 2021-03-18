@@ -39,6 +39,7 @@
 
 html {
     font-family: "Helvetica Neue", opensans, Arial, Helvetica, sans-serif;
+    scrollbar-width: none;
 }
 
 .fof-logo {
