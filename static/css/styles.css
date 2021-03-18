@@ -510,6 +510,7 @@ pre:hover > code {
 
 p > img {
     max-height: 300px;
+    max-width: 100%;
     width: auto;
     border: 1px solid #aaaaaa33;
     box-shadow: 2px 2px 2px #aaaaaa33;
