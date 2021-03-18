@@ -185,4 +185,4 @@ If you are curious for the matches, they look a little bit like this:
 
 ## That's It For Today
 
-...And we are gonna stop here for now. That's a lot to take in for today, but tomorrow is going to be even harder. Tomorrow, we are going to do the baseline triangulation, which will generate our primitive point cloud!
+...And we are gonna stop here for now. That's a lot to take in for today, but tomorrow is going to be even harder. But don't give up yet! Tomorrow, we are going to do the baseline triangulation, which will generate our primitive point cloud!
