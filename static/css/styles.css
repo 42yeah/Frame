@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 @font-face {
@@ -39,7 +41,6 @@
 
 html {
     font-family: "Helvetica Neue", opensans, Arial, Helvetica, sans-serif;
-    scrollbar-width: none;
 }
 
 .fof-logo {
