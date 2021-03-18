@@ -14,7 +14,7 @@ As performing SIFT/ORB itself is way too easy in OpenCV (there's literally a cal
 
 ## Input Data
 
-Before that though, we need a dataset. I am using my own dataset here, a statue of the famed physicist Yang Chen-Ning in front of my school library. You can get it [here](https://42yeah.github.io/FPDR). Or, if you are not a big fan of him (who isn't?), you can use [royshil/SfM-Toy-Library's Crazyhorse dataset](https://github.com/royshil/SfM-Toy-Library/tree/master/dataset/crazyhorse). Or, you can just make it yourself. Just take photos of the same object at slightly varying angles. After that, we can finally begin.
+Before that though, we need a dataset. I am using my own dataset here, a statue of the renowned physicist Yang Chen-Ning in front of my school library. You can get it [here](https://42yeah.github.io/FPDR). Or, if you are not a big fan of him (who isn't?), you can use [royshil/SfM-Toy-Library's Crazyhorse dataset](https://github.com/royshil/SfM-Toy-Library/tree/master/dataset/crazyhorse). Or, you can just make it yourself. Just take photos of the same object at slightly varying angles. After that, we can finally begin.
 
 ## SfM
 
