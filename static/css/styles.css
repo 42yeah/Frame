@@ -579,3 +579,8 @@ p > img:hover {
     background-color: #ff650099;
     width: calc(100% + 20px);
 }
+
+li::marker {
+    color: #ff6500;
+    font-weight: bolder;
+}
